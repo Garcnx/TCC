@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="auth-container">
+        <header class="auth-header">
+            <h1>Cadastro</h1>
+            <p>Crie sua conta</p>
+        </header>
+
+
+
+        <form class="auth-form">
+
+            <div class="form-group">
+                <label for="cadastro">Nome:</label>
+                <input type="text" id="cadastro" placeholder="Nome completo" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="seuemail@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="number" id="telefone" maxlength="11" minlength="11" placeholder="13 99999-9999" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <button type="submit" class="btn-primary">Entrar</button>            
+        </form>
+
+        <div class="auth-links">
+            <span>Tem conta?</span>
+                <a href="login.html"></a>
+        </div>
+        
+    </main>    
+</body>
+</html>
