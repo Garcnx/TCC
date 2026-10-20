@@ -1,38 +1,3 @@
-USE master;
-GO
-
-IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'OrbitTask')
-BEGIN
-    ALTER DATABASE OrbitTask SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-    DROP DATABASE OrbitTask;
-END
-GO
-
-IF NOT EXISTS (
-    SELECT 1
-    FROM sys.server_principals
-    WHERE name = N'enzo\enzog'
-)
-BEGIN
-    CREATE LOGIN [enzo\enzog] FROM WINDOWS;
-END
-GO
-
-CREATE DATABASE OrbitTask;
-GO
-
-ALTER LOGIN [enzo\enzog]
-WITH DEFAULT_DATABASE = master;
-GO
-
-USE OrbitTask;
-GO
-
-CREATE USER [enzo\enzog] FOR LOGIN [enzo\enzog];
-GO
-
-ALTER ROLE db_owner ADD MEMBER [enzo\enzog];
-GO
 
 CREATE TABLE usuarios (
     id INT IDENTITY(1,1) PRIMARY KEY,

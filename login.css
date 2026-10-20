@@ -1,4 +1,4 @@
-
+/* Configurações gerais */
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* Container principal */
 .auth-container {
     width: 100%;
     max-width: 400px;
@@ -38,6 +38,7 @@ body {
     box-shadow: 0 15px 40px #00000030;
 }
 
+/* Cabeçalho */
 .auth-header {
     text-align: center;
     margin-bottom: 28px;
@@ -53,7 +54,7 @@ body {
     font-size: 14px;
 }
 
-
+/* Formulário */
 .auth-form {
     display: flex;
     flex-direction: column;
@@ -92,7 +93,7 @@ body {
     box-shadow: 0 0 0 3px #3b82f630;
 }
 
-
+/* Botão principal */
 .btn-primary {
     width: 100%;
     padding: 15px;
@@ -112,7 +113,7 @@ body {
     transform: translateY(-1px);
 }
 
-
+/* Links */
 .auth-links {
     display: flex;
     justify-content: center;
@@ -133,6 +134,7 @@ body {
     text-decoration: underline;
 }
 
+/* Separador */
 .auth-divider {
     display: flex;
     align-items: center;
@@ -150,6 +152,7 @@ body {
     background: var(--border);
 }
 
+/* Versão para celulares */
 @media (max-width: 480px) {
     body {
         padding: 16px;
