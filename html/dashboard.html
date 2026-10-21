@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#0d162b">
+	<title>Dashboard | OrbitTask</title>
+	<link rel="stylesheet" href="../css/dashboard.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+	<main class="app-shell">
+		<header class="topbar">
+			<div>
+				<p class="eyebrow">TCC • Engenharia de Software</p>
+				<h1>Olá, Maria <span aria-hidden="true">☀</span></h1>
+				<p class="muted">Vamos fazer acontecer hoje.</p>
+			</div>
+			<a class="icon-button notification-button" href="atividade.html" aria-label="Ver atividade recente">
+				<i class="fa-regular fa-bell" aria-hidden="true"></i>
+				<span class="notification-dot" aria-hidden="true"></span>
+			</a>
+		</header>
+
+		<section class="progress-panel" aria-labelledby="progress-title">
+			<div class="progress-ring" role="img" aria-label="65 por cento concluído">
+				<span>65<small>%</small></span>
+			</div>
+			<div class="progress-copy">
+				<p class="eyebrow">TaskFlow</p>
+				<h2 id="progress-title">Progresso geral</h2>
+				<p class="muted">Projeto de gerenciamento de equipes</p>
+				<div class="progress-track" aria-hidden="true"><span></span></div>
+			</div>
+		</section>
+
+		<section class="section-block" aria-labelledby="team-title">
+			<div class="section-heading">
+				<h2 id="team-title">Carga da equipe</h2>
+				<a href="conta.html">Ver equipe</a>
+			</div>
+			<div class="team-grid">
+				<div class="team-member"><span class="avatar avatar-blue">MS</span><strong>Maria</strong><small>Design</small></div>
+				<div class="team-member"><span class="avatar avatar-green">JP</span><strong>João</strong><small>Backend</small></div>
+				<div class="team-member"><span class="avatar avatar-orange">AC</span><strong>Ana</strong><small>Pesquisa</small></div>
+				<div class="team-member"><span class="avatar avatar-violet">GL</span><strong>Garcia</strong><small>Líder</small></div>
+			</div>
+		</section>
+
+		<section class="section-block" id="sprint" aria-labelledby="tasks-title">
+			<div class="section-heading">
+				<h2 id="tasks-title">Tarefas prioritárias</h2>
+				<a href="atividade.html">Ver todas</a>
+			</div>
+			<ul class="task-list">
+				<li class="task-item">
+					<span class="task-icon task-icon-blue"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></span>
+					<div class="task-copy"><h3>Escrever introdução do TCC</h3><p><span class="priority high"></span> Alta <span class="task-separator">•</span> Hoje, 23:59</p></div>
+					<span class="avatar avatar-blue avatar-small" aria-label="Responsável: Maria">MS</span>
+				</li>
+				<li class="task-item">
+					<span class="task-icon task-icon-orange"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+					<div class="task-copy"><h3>Refinar protótipo de média fidelidade</h3><p><span class="priority medium"></span> Média <span class="task-separator">•</span> Amanhã</p></div>
+					<span class="avatar avatar-orange avatar-small" aria-label="Responsável: Ana">AC</span>
+				</li>
+				<li class="task-item">
+					<span class="task-icon task-icon-green"><i class="fa-solid fa-database" aria-hidden="true"></i></span>
+					<div class="task-copy"><h3>Configuração do banco de dados</h3><p><span class="priority low"></span> Baixa <span class="task-separator">•</span> 30 out.</p></div>
+					<span class="avatar avatar-green avatar-small" aria-label="Responsável: João">JP</span>
+				</li>
+			</ul>
+		</section>
+
+		<nav class="bottom-nav" aria-label="Navegação principal">
+			<a class="nav-item is-active" href="dashboard.html" aria-current="page"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i><span>Dashboard</span></a>
+			<a class="nav-item" href="canais.html"><i class="fa-regular fa-comments" aria-hidden="true"></i><span>Canais</span></a>
+			<a class="nav-item" href="#sprint"><i class="fa-solid fa-list-check" aria-hidden="true"></i><span>Sprint</span></a>
+			<a class="nav-item" href="atividade.html"><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Atividade</span></a>
+			<a class="nav-item" href="conta.html"><i class="fa-regular fa-user" aria-hidden="true"></i><span>Perfil</span></a>
+		</nav>
+		<div class="system-bar" aria-hidden="true"></div>
+	</main>
+</body>
+</html>

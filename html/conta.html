@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d162b">
+    <title>Perfil | OrbitTask</title>
+    <link rel="stylesheet" href="../css/conta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <main class="app-shell">
+        <header class="perfil">
+            <div class="conta" aria-hidden="true"><i class="fa-solid fa-user"></i></div>
+            <div class="perfil-info">
+                <p class="eyebrow">TaskFlow • Equipe TCC</p>
+                <h1>Visitante</h1>
+                <span class="status-label"><span class="status"></span> Conta não conectada</span>
+            </div>
+        </header>
+
+        <section class="opcoes" aria-label="Ações da equipe">
+            <button class="opcao" type="button"><span><i class="fa-solid fa-user-plus" aria-hidden="true"></i> Convidar integrantes</span><small>Admin <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></small></button>
+            <button class="opcao" type="button"><span><i class="fa-solid fa-user-gear" aria-hidden="true"></i> Definir funções da equipe</span><small>Admin <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></small></button>
+            <button class="opcao" type="button"><span><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i> Sincronizar conta</span><small>Admin <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></small></button>
+        </section>
+
+        <section class="configuracoes" aria-labelledby="settings-title">
+            <h2 id="settings-title">Configurações</h2>
+            <label class="config-item" for="push-notifications">
+                <span><i class="fa-regular fa-bell" aria-hidden="true"></i> Notificações push</span>
+                <span class="switch"><input id="push-notifications" type="checkbox" checked><span class="slider"></span></span>
+            </label>
+            <label class="config-item" for="dark-mode">
+                <span><i class="fa-regular fa-moon" aria-hidden="true"></i> Modo escuro</span>
+                <span class="switch"><input id="dark-mode" type="checkbox" checked><span class="slider"></span></span>
+            </label>
+        </section>
+
+        <div class="login-area"><a class="login-btn" href="login.html">Faça login / cadastrar</a></div>
+
+        <nav class="bottom-nav" aria-label="Navegação principal">
+            <a class="nav-item" href="dashboard.html"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i><span>Dashboard</span></a>
+            <a class="nav-item" href="canais.html"><i class="fa-regular fa-comments" aria-hidden="true"></i><span>Canais</span></a>
+            <a class="nav-item" href="dashboard.html#sprint"><i class="fa-solid fa-list-check" aria-hidden="true"></i><span>Sprint</span></a>
+            <a class="nav-item" href="atividade.html"><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Atividade</span></a>
+            <a class="nav-item is-active" href="conta.html" aria-current="page"><i class="fa-regular fa-user" aria-hidden="true"></i><span>Perfil</span></a>
+        </nav>
+        <div class="system-bar" aria-hidden="true"></div>
+    </main>
+</body>
+</html>

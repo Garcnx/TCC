@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#0d162b">
+	<title>Canais | OrbitTask</title>
+	<link rel="stylesheet" href="../css/canais.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+	<main class="app-shell">
+		<header class="page-header">
+			<div><p class="eyebrow">TaskFlow • Equipe TCC</p><h1>Canais de Discussão</h1><p class="muted">Converse e compartilhe ideias com a equipe.</p></div>
+			<button class="icon-button" type="button" aria-label="Pesquisar canais"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+		</header>
+
+		<section class="online-row" aria-label="Membros ativos">
+			<div class="online-avatars"><span class="avatar avatar-blue">MS</span><span class="avatar avatar-green">JP</span><span class="avatar avatar-orange">AC</span><span class="avatar avatar-violet">GL</span></div>
+			<p><strong>4 membros</strong><span> ativos agora</span></p>
+			<span class="online-indicator" aria-hidden="true"></span>
+		</section>
+
+		<section class="channels-section" aria-labelledby="channels-title">
+			<div class="section-heading"><h2 id="channels-title">Seus canais</h2><span>03</span></div>
+			<ul class="channel-list">
+				<li>
+					<a class="channel-card" href="#geral">
+						<span class="channel-mark mark-blue"><i class="fa-solid fa-hashtag" aria-hidden="true"></i></span>
+						<span class="channel-copy"><strong>#Geral</strong><small>Maria: Enviei a versão final do novo documento...</small></span>
+						<span class="channel-meta"><time datetime="2026-10-20T14:32">14:32</time><b class="unread">2</b></span>
+					</a>
+				</li>
+				<li>
+					<a class="channel-card" href="#design">
+						<span class="channel-mark mark-violet"><i class="fa-solid fa-hashtag" aria-hidden="true"></i></span>
+						<span class="channel-copy"><strong>#Design</strong><small>Lucas: O que acham desse palette de cores?</small></span>
+						<span class="channel-meta"><time datetime="2026-10-20T13:18">13:18</time></span>
+					</a>
+				</li>
+				<li>
+					<a class="channel-card" href="#desenvolvimento">
+						<span class="channel-mark mark-green"><i class="fa-solid fa-hashtag" aria-hidden="true"></i></span>
+						<span class="channel-copy"><strong>#Desenvolvimento</strong><small>João: O sprint de hoje ficou mais tranquilo.</small></span>
+						<span class="channel-meta"><time datetime="2026-10-20T11:06">11:06</time><b class="unread">1</b></span>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="conversation-preview" id="geral" aria-labelledby="conversation-title">
+			<div class="conversation-title"><span class="channel-mark mark-blue"><i class="fa-solid fa-hashtag" aria-hidden="true"></i></span><div><h2 id="conversation-title">#Geral</h2><p>Conversa da equipe</p></div><button class="more-button" type="button" aria-label="Mais opções"><i class="fa-solid fa-ellipsis" aria-hidden="true"></i></button></div>
+			<article class="message">
+				<span class="avatar avatar-blue">MS</span>
+				<div><p class="message-meta"><strong>Maria Silva</strong><time datetime="2026-10-20T14:32">14:32</time></p><p class="message-text">Enviei a versão final do documento. Quando puderem, deem uma olhada! 📄</p></div>
+			</article>
+			<article class="message">
+				<span class="avatar avatar-green">JP</span>
+				<div><p class="message-meta"><strong>João Pedro</strong><time datetime="2026-10-20T14:35">14:35</time></p><p class="message-text">Perfeito, vou revisar ainda hoje.</p></div>
+			</article>
+			<form class="message-form" action="#geral">
+				<label class="sr-only" for="message-input">Escreva uma mensagem</label>
+				<input id="message-input" type="text" placeholder="Mensagem para #Geral" autocomplete="off">
+				<button type="submit" aria-label="Enviar mensagem"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+			</form>
+		</section>
+
+		<a class="new-topic" href="#message-input"><i class="fa-solid fa-plus" aria-hidden="true"></i><span>Novo tópico</span></a>
+
+		<nav class="bottom-nav" aria-label="Navegação principal">
+			<a class="nav-item" href="dashboard.html"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i><span>Dashboard</span></a>
+			<a class="nav-item is-active" href="canais.html" aria-current="page"><i class="fa-regular fa-comments" aria-hidden="true"></i><span>Canais</span></a>
+			<a class="nav-item" href="dashboard.html#sprint"><i class="fa-solid fa-list-check" aria-hidden="true"></i><span>Sprint</span></a>
+			<a class="nav-item" href="atividade.html"><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Atividade</span></a>
+			<a class="nav-item" href="conta.html"><i class="fa-regular fa-user" aria-hidden="true"></i><span>Perfil</span></a>
+		</nav>
+		<div class="system-bar" aria-hidden="true"></div>
+	</main>
+</body>
+</html>

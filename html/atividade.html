@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#0d162b">
+	<title>Atividade recente | OrbitTask</title>
+	<link rel="stylesheet" href="../css/atividade.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+	<main class="app-shell">
+		<header class="page-header">
+			<div><p class="eyebrow">TaskFlow • Equipe TCC</p><h1>Atividade recente</h1><p class="muted">Acompanhe o que está acontecendo no projeto.</p></div>
+			<button class="icon-button" type="button" aria-label="Filtrar atividades"><i class="fa-solid fa-sliders" aria-hidden="true"></i></button>
+		</header>
+
+		<section class="activity-summary" aria-label="Resumo de atividade">
+			<div><strong>12</strong><span>atualizações</span></div>
+			<span class="summary-divider" aria-hidden="true"></span>
+			<div><strong>4</strong><span>membros ativos</span></div>
+			<span class="activity-live"><i aria-hidden="true"></i>Ao vivo</span>
+		</section>
+
+		<section class="timeline" aria-label="Linha do tempo de atividades">
+			<div class="day-label"><span>Hoje</span><time datetime="2026-10-20">20 out.</time></div>
+			<ol class="activity-list">
+				<li class="activity-entry">
+					<span class="timeline-marker marker-blue"><i class="fa-solid fa-file-pen" aria-hidden="true"></i></span>
+					<article class="activity-card">
+						<div class="entry-top"><span class="avatar avatar-blue">MS</span><div class="entry-author"><strong>Maria Silva</strong><span>enviou um comentário para</span></div><time datetime="2026-10-20T14:32">14:32</time></div>
+						<div class="entry-detail"><span class="detail-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></span><div><strong>Documento de requisitos</strong><p>“Atualizei a seção de objetivos. Podem revisar?”</p></div></div>
+					</article>
+				</li>
+				<li class="activity-entry">
+					<span class="timeline-marker marker-orange"><i class="fa-solid fa-link" aria-hidden="true"></i></span>
+					<article class="activity-card">
+						<div class="entry-top"><span class="avatar avatar-green">JP</span><div class="entry-author"><strong>João Pedro</strong><span>adicionou um link de design no tópico</span></div><time datetime="2026-10-20T13:48">13:48</time></div>
+						<div class="entry-detail"><span class="detail-icon orange"><i class="fa-brands fa-figma" aria-hidden="true"></i></span><div><strong>Protótipo • Versão Candidata 03</strong><p>Canal Design <span class="detail-dot">•</span> Sprint 1</p></div></div>
+					</article>
+				</li>
+				<li class="activity-entry">
+					<span class="timeline-marker marker-green"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+					<article class="activity-card">
+						<div class="entry-top"><span class="avatar avatar-orange">AC</span><div class="entry-author"><strong>Ana Costa</strong><span>comentou em Definição de Requisitos</span></div><time datetime="2026-10-20T11:07">11:07</time></div>
+						<p class="plain-note">“A estrutura está pronta para validação com o orientador.”</p>
+					</article>
+				</li>
+			</ol>
+
+			<div class="day-label older-day"><span>Ontem</span><time datetime="2026-10-19">19 out.</time></div>
+			<ol class="activity-list">
+				<li class="activity-entry">
+					<span class="timeline-marker marker-violet"><i class="fa-solid fa-list-check" aria-hidden="true"></i></span>
+					<article class="activity-card">
+						<div class="entry-top"><span class="avatar avatar-violet">GL</span><div class="entry-author"><strong>Garcia Lima</strong><span>concluiu uma tarefa</span></div><time datetime="2026-10-19T16:20">16:20</time></div>
+						<div class="entry-detail"><span class="detail-icon green"><i class="fa-solid fa-check" aria-hidden="true"></i></span><div><strong>Modelagem inicial do banco</strong><p>Sprint 1 <span class="detail-dot">•</span> Desenvolvimento</p></div></div>
+					</article>
+				</li>
+			</ol>
+		</section>
+
+		<nav class="bottom-nav" aria-label="Navegação principal">
+			<a class="nav-item" href="dashboard.html"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i><span>Dashboard</span></a>
+			<a class="nav-item" href="canais.html"><i class="fa-regular fa-comments" aria-hidden="true"></i><span>Canais</span></a>
+			<a class="nav-item" href="dashboard.html#sprint"><i class="fa-solid fa-list-check" aria-hidden="true"></i><span>Sprint</span></a>
+			<a class="nav-item is-active" href="atividade.html" aria-current="page"><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Atividade</span></a>
+			<a class="nav-item" href="conta.html"><i class="fa-regular fa-user" aria-hidden="true"></i><span>Perfil</span></a>
+		</nav>
+		<div class="system-bar" aria-hidden="true"></div>
+	</main>
+</body>
+</html>
